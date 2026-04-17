@@ -5,58 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projct">
     <title>Projct</title>
-    <style>
-        .prof{width: 100px;
-            border-radius:50px ;
-            }
-         img{width: 100px;
-            height: 100px;
-            object-fit: cover;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
     <header>
-        <img class="prof"  src="Images/pict.jpg" alt="my profile">
         <h1>AMIR  ADHAM</h1>
-        <a href="#footer">go to the bottom</a>
-        <a href="mailto:amiradham@gmail.com">Email me</a>
+        <nav class="header_nav">
+        <a href="#footer">GO BOTTOM</a>
+        <a href="mailto:amiradham@gmail.com">Email Me</a>
+        </nav>
         <hr>
         <hr>
-        <h2>Bio</h2>
-        <p>I am <i>Amir Adham</i> a 2<sup>nd</sup> year <b>Software Enginnering</b> Student at <strong>Adama Science And Technology</strong> University.</p>
+        <section class="bio">
+            <div class="bio_emements"><img class="prof"  src="Images/pict.jpg" alt="my profile"></div>
+            <div class="bio_emements"><h2 class="bio_head" >Bio</h2>
+        <p>I am <i>Amir Adham</i> a 2<sup>nd</sup> year <b>Software Enginnering</b> Student at <strong>Adama Science And Technology</strong> University.</p></div>
+        </section>
+        
 
     </header>
     <body>
-        <p>I have taken the main programming langues which are fundamental for any software enginner like: <ul>
-            <li><a href="https://www.google.com/search?q=python&rlz=1C1NDCM_enET957ET966&oq=python&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiPAjIHCAIQABiPAjIGCAMQRRg8MgYIBBBFGDwyBggFEEUYPNIBCDgzNTVqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8">python</a></li>
-            <li>c++</li>
-        </ul></p>   
-        <p>becide my school courses I am also taking different cources like: <ol>
-            <li>A Data structure and algorisms</li>
-            <li>A cyber security and</li>
-            <li>A Web development</li>
+        <section class="issential">
+        <div class="issential_element"> 
+            <p>I have taken the main programming langues which are fundamental for any software enginner like: 
+                <ul>
+                    <li class="issential_element_list"><a href="https://www.google.com/search?q=python&rlz=1C1NDCM_enET957ET966&oq=python&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiPAjIHCAIQABiPAjIGCAMQRRg8MgYIBBBFGDwyBggFEEUYPNIBCDgzNTVqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8">python</a></li>
+                    <li class="issential_element_list">c++</li>
+                </ul>
+            </p>   
+        </div>
+        <div class="issential_element">
+        <p>becide my school courses I am also taking different cources like: 
+            <ol class="my_list">
+            <li class="list1">A Data structure and algorisms</li>
+            <li class="list2">A cyber security and</li>
+            <li class="list3">A Web development</li>
         </ol></p>
-        <p>My hobbies are:
-            <ul>
-                <li>playing football</li> <a href="https://unsplash.com/s/photos/foot-ball" target="_blank"><img src="Images/ball.jpg" alt="a ball"></a>
-                <li>learning new things</li><iframe width="250" height="140" src="https://www.youtube-nocookie.com/embed/P6FORpg0KVo?si=gDSpSsYR4Pmrr39d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </ul>
-        </p>
-
+    </div>
+    </section>
+    <section class="hobbies">
+        <h2>My hobbies are:</h2>
+         <div class="hobbies_values">
+                
+                <div><p>playing football</p> <a href="https://unsplash.com/s/photos/foot-ball" target="_blank"><img src="Images/ball.jpg" alt="a ball"></a></div>
+                <div><p>learning new things</p><iframe  src="https://www.youtube-nocookie.com/embed/P6FORpg0KVo?si=gDSpSsYR4Pmrr39d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            
+        </div>
         
+    </section>    
+
+    <section class="education">    
         <h2>Educational background</h2>
         <p>Throug out my unversity life I have taken different cources</p>
         <table>
-            <thead>
+            <thead class="education_elements">
                 <caption>Educational Table</caption>
                 <tr>
                     <th>course name</th>
                     <th>creadit hour</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="education_elements">
                 <tr>
                     <td>Applied Mathimatics1</td>
                     <td>4</td>
@@ -93,25 +104,36 @@
                 
             </tbody>
         </table>
+    </section>
         
-
+  
 
         
     </body>
     <footer id="footer">
         <h2>contact</h2>
         <p>If you wanted to contact me use the form below</p>
-        <form action="">
-            <input type="text" value="Enter your name"><br>
-            <input type="email" value="Enter your email"><br>
-            <textarea name="Message textarea" >you can type your message here</textarea>
-            <input type="submit">
+        <form >
+            <div class="form_emement">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form_emement">
+                <label for="email">Email:</label>
+                <input type="text" id="name" placeholder="Enter your email">
+            </div>
+            <div class="form_emement">
+                <label for="testarea">Text Area:</label>
+                <textarea name="Message textarea" id="testarea" placeholder="you can type your message here" ></textarea>
+            </div>
+            <button class="form_button" type="submit">submit</button>
+            
         </form>
-
     </footer>
+    <a  class="footer_a" href="#">Jump To The Top</a>
     <hr>
     <hr>
-    <a href="#">Jump To The Top</a>
+    
     
 </body>
 </html>
