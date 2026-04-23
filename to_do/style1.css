@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+header {
+    padding: 1rem;
+    text-align: center;
+    background-color: rgb(197, 226, 250);
+}
+section {
+    margin: auto;
+    width: 60%;
+    overflow: auto;
+    padding: 3rem 2rem;
+}
+form {
+    padding: 2rem;
+    background-color: rgb(197, 226, 250);
+}
+form h1{
+    text-align: center;
+}
+.input_form {
+    margin: 0 10rem;
+    display: flex;
+    
+}
+input {
+    width: 70%;
+    padding: 1rem;
+    margin-right: 2rem;
+    border: 1px solid ;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+button {
+    width:20% ;
+    background-color: rgb(36, 75, 112);
+    color: beige;
+    padding: 1rem;   
+    font-size: 1.2rem;
+}
+button:hover{
+    background-color:rgb(71, 99, 126) ;
+}
+ul{
+    list-style: none;
+}
+ul li {
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 1rem 10rem;
+    background: rgb(197, 226, 250);
+    padding: 2px;
+    font-size: 1.8rem;
+    
+}
+ul li div {
+    display: flex;
+    gap: 5px;
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.complete-btn {
+    margin-left: 320px;
+    background: rgb(36, 75, 112);
+    color: white;
+}
+.complete-btn:hover{
+    background-color:rgb(71, 99, 126) ;
+}
+
+.delete-btn {
+    margin-left: 20PX;
+    padding-right: 0;
+    background: rgb(36, 75, 112);
+    color: white;
+}
+.delete-btn:hover{
+    background-color:rgb(71, 99, 126) ;
+}
+.error {
+    background: orangered;
+    color: #ffff;
+    padding: 5px;
+    margin: 5px;
+}
